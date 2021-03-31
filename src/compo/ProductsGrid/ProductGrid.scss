@@ -1,0 +1,128 @@
+
+  
+  /********************* Shopping Demo-9 **********************/
+  
+  .product-grid9 {
+    position: relative;
+    margin: 4%;
+  
+    .product-image9 {
+      position: relative;
+  
+      a {
+        display: block;
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+
+   
+    .product-full-view {
+      color: #505050;
+      background-color: #fff;
+      font-size: 16px;
+      height: 45px;
+      width: 45px;
+      padding: 18px;
+      border-radius: 100px 0 0;
+      display: block;
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transition: all .3s ease 0s;
+  
+      &:hover {
+        color: #c0392b;
+      }
+    }
+  
+    &:hover .product-full-view {
+      opacity: 1;
+    }
+  
+    .product-content {
+      padding: 12px 12px 0;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  
+  .product-content .rating {
+    padding: 0;
+    margin: 0 0 7px;
+    list-style: none;
+  }
+  
+  .product-grid9 {
+    .rating li {
+      font-size: 12px;
+      color: #ffd200;
+      transition: all .3s ease 0s;
+  
+      &.disable {
+        color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  
+    .title {
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin: 0 0 3px;
+      transition: all .3s ease 0s;
+  
+      a {
+        color: rgba(0, 0, 0, 0.5);
+  
+        &:hover {
+          color: #c0392b;
+        }
+      }
+    }
+  
+    .price {
+      color: #000;
+      font-size: 17px;
+      margin: 0;
+      display: block;
+      transition: all .5s ease 0s;
+    }
+  
+    // &:hover .price {
+    //   opacity: 0;
+    // }
+  
+    .add-to-cart {
+      display: block;
+      color: #c0392b;
+      font-weight: 600;
+      font-size: 14px;
+      opacity: 0;
+      position: absolute;
+      left: 10px;
+      bottom: -20px;
+      transition: all .5s ease 0s;
+    }
+  
+    &:hover .add-to-cart {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+  
+  .product-grid9 .product-image9 img{
+    height: 350px;
+    width: auto;
+    
+  }
+
+  @media only screen and (max-width: 990px) {
+    .product-grid9 {
+      margin-bottom: 30px;
+    }
+  }
